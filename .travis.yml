@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: OhX6cfs1DpygiIMcBcpllI2BxhPdmzkkzDXrYVebP799ja7ar5CCrAkFhRnNr4plxGMD2r8EjrrTd2ivP4nbHTrvdqNbMji6gOEfAmIFFsG15DqTrhR+8QtJDAZKoa2xLM9ph0n2Xq5YyRXWmHzaEjybWYAkdjM8S/8x/9owHA9bza0Lw3b0mCt0WHVd5sjvomx/uNlHvW/0HJxh2um4lYJW/VyKQMcTKyY/B+1cviMt5vpEdUn/D8n1uh7gjkZO4liFoZx/T/Y1R12NRqb981+M1awXS2jr6HNncFGaSUs5jOVbX3/5bPrTEFhpPhWTK+8mFV2aGmrMQ9wXaZqk9TusRqH01uy9quNQlp3zL4WXQU+WwAf8o9IqHOmjSwe9cqroG9oCLni1sYm51tF05g2A/fQVELKtiUOwm5lzeUfdtmSxEe84LVAkG98U6Yvqr2yg3sd4fxVxtI2QafJa1zrkvEqGya5cEac2ZXuvISvbMG1odscLuhoa/lOhca2kJTub5MANw9rPC30c4EXjOmSeJhW3gcJYhe0LeJ1+4ZRI1DnOPjzf+0a0n3P35bn/3EjjIwfrNxzDzLF6OJjHyB0o1eP2TcShQmgFawrcg8RZNw2UpG4ZbqfpGsODAf1zWD+ulCf48hD/zdbpw+q+YKVCezisv3SqFc0hnitQefs=
+  app: heroku create
+  on:
+    repo: djiani/node-shopping-list-integration-tests
